@@ -35,5 +35,14 @@ $('#addTasksBtn').on('click', function(){
 
 	});
 
+	$('#showAllTasksDoneBtn').on('click', function(){
+
+		console.log('ok3');
+
+		$('input[type=checkbox]:checked').parent('li').show();
+		$('input[type=checkbox]:not(:checked)').parent('li').show();
+
+	});
+
 
 })();
