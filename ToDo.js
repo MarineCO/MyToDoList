@@ -17,12 +17,21 @@ $('#addTasksBtn').on('click', function(){
 
 //Click hide tasks to do
 
-	$('#hideTasksToDoBtn').click(function(){
+	$('#hideTasksToDoBtn').on('click', function(){
 
 		console.log('ok');
 
 		$('input[type=checkbox]:not(:checked)').parent('li').hide();
 		$('input[type=checkbox]:checked').parent('li').show();
+
+	});
+
+	$('#hideTasksDoneBtn').on('click', function(){
+
+		console.log('ok2');
+
+		$('input[type=checkbox]:checked').parent('li').hide();
+		$('input[type=checkbox]:not(:checked)').parent('li').show();
 
 	});
 
