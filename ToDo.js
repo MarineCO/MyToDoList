@@ -8,10 +8,11 @@ console.log('checkbox');
 
 	console.log('hello');
 
-	$('.list').append('<li> <input type="checkbox" class="task"> </li>')
+	var addTask = $('input[name=addTask]').val();
+
+	$('.list').append('<li>' + '<input type="checkbox" class="task">' + addTask + '</li>')
 
 	});
-
 
 
 })();
