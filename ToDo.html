@@ -4,20 +4,27 @@
 	<meta charset="UTF-8">
 	<title>My First To Do List</title>
 	<link rel="stylesheet" type="text/css" href="ToDo.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui/dist/semantic.css">
 </head>
 <body>
-	<div>
+	<h1 class="ui one column centered grid" id="title">My to do list</h1>
+	<div class="ui two column centered grid">
 		<input type="text" name="addTask" placeholder="Add a task's name !">
-	</div>
-	<div class="divBtn">
 		<button id="addTasksBtn">Add a task</button>
-		<button id="hideTasksToDoBtn">Hide tasks to do</button>
-		<button id="hideTasksDoneBtn">Hide tasks done</button>
-		<button id="showAllTasksDoneBtn">Show all tasks</button>
 	</div>
-	<div class="divAdd">
-		<ul class="list">
-		</ul>
+	<div class="ui grid divBtn">
+		<div class="four wide column">
+			<div class="ui vertical fluid tabular menu">
+				<button id="hideTasksToDoBtn" class="active item">Hide tasks to do</button>
+				<button id="hideTasksDoneBtn" class="active item">Hide tasks done</button>
+				<button id="showAllTasksDoneBtn" class="active item">Show all tasks</button>
+			</div>
+		</div>
+		<div class="twelve wide stretched column">
+			<div class="ui segment divAdd">
+				<ul id="list" class="list"></ul>
+			</div>
+		</div>
 	</div>
 	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script src="ToDo.js"></script>

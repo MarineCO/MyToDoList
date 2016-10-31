@@ -1,3 +1,9 @@
 li {
 	list-style-type: none;
 }
+#title {
+	margin: 30px;
+}
+#btnSupp {
+	margin-left: 30px;
+}
